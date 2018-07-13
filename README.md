@@ -2,7 +2,7 @@
 
 CÉLEREBRO é um minigame que estou desenvolvendo para praticar o conteúdo de programação que aprendo. Também porque gosto muito de jogos “neuróbicos”.
 
-Este é apenas um protótipo de um projeto maior, que contará com diversos outros módulos, interface gráfica e tudo mais. No entanto, para que tal jogo possa sair inteiramente do papel, preciso estudar muitas outras ferramentas que me auxiliem neste processo criativo.
+Este é apenas o protótipo de um projeto maior, que contará com diversos outros módulos, interface gráfica e tudo mais. No entanto, para que tal jogo possa sair inteiramente do papel, preciso estudar muitas outras ferramentas que me auxiliem neste processo criativo.
 
 Neste caso, tentei utilizar ao máximo os recursos que a (poderosa) linguagem C oferece, desde a manipulação de arquivos até estrutudas de dados e ordenação. Muitas vezes, debugá-lo foi um desafio. Não é fácil indentificar um erro de semântica. E, graças ao gdb, corrigi vários problemas de segmentation fault.
 
