@@ -1,0 +1,22 @@
+typedef struct operacao Operacao;
+typedef struct erro Erro;
+typedef struct listaoperacoes ListaOperacoes;
+typedef struct listaerros ListaErros;
+
+ListaOperacoes* criarListaOperacoes();
+ListaErros* criarListaErros();
+ListaOperacoes* carregarListaOperacoes(ListaOperacoes* operacoes, int flag, int tipoOperacao, int nivel);
+Operacao* criarNovaOperacao(int index, int num1, int op, int num2, int resultado);
+Erro* criarNovoErro(int num1, int op, int num2, int resultado, int resposta);
+void imprimirErros(ListaErros* erros);
+ListaOperacoes* inserirOperacao(ListaOperacoes* operacoes, Operacao* novaOperacao);
+ListaErros* inserirErro(ListaErros* erros, Erro* novoErro);
+void liberarListaOperacoes(ListaOperacoes* operacoes);
+void liberarListaErros(ListaErros* erros);
+Operacao* sortearOperacao(ListaOperacoes* operacoes);
+int maxIndex(ListaOperacoes* operacoes);
+int getNum1 (Operacao* operacao);
+int getNum2 (Operacao* operacao);
+int getTipoOperacao(Operacao* operacao);
+int getResultado (Operacao* operacao);
+void reiniciarIndex();

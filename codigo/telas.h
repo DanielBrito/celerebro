@@ -1,0 +1,15 @@
+void telaIniciarJogo();
+void telaIniciarJogoCarregar();
+void pausarTela();
+void telaMenu();
+void telaNovaPartida();
+void telaJogoCarregarEstatica();
+void telaJogoCarregar(int t);
+void telaJogoEspera();
+void telaJogo();
+void telaResultado();
+void telaFimDeJogo();
+void telaErros();
+void telaRanking();
+void telaNeurobica();
+void telaSair();
