@@ -22,7 +22,6 @@ ListaPartidas* ordenarRanking(ListaPartidas* partidas);
 int contaNos(ListaPartidas* partidas);
 void imprimirPosicaoRanking(Partida* partida, int posicao);
 void imprimirRankingVazio(int posicao);
-void imprimirPosicaoVazia(int posicao);
 void rankingVazio(int tipoOperacao);
 void arquivoRankingNull();
 int listaVazia(ListaPartidas* partidas);

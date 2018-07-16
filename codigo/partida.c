@@ -371,23 +371,19 @@ void novaPartida(){
         switch(opcao){
 
             case 1: free(p); 
-                    liberarListaErros(erros); 
                     iniciarMenu(); 
                     break;
 
             case 2: free(p); 
-                    liberarListaErros(erros); 
                     novaPartida(); 
                     break;
 
             case 3: free(p); 
-                    liberarListaErros(erros);
                     telaRanking();
                     mostrarRanking();
                     break;
 
             case 0: free(p); 
-                    liberarListaErros(erros); 
                     telaSair();
         }
     }
@@ -627,15 +623,15 @@ void cadastrarRanking(Partida* p){
         exit(1);
     }
 
-    fprintf(arquivo, "%s %d %d %d %ld\n", p->nome, p->nivel, p->tipoOperacao, p->pontuacao, p->tempoPartida);
-
-    fprintf(ocultar, "ranking.txt");
-
     if(ocultar==NULL){
 
         printf("Erro na abertura do arquivo!\n");
         exit(1);
     }
+
+    fprintf(arquivo, "%s %d %d %d %ld\n", p->nome, p->nivel, p->tipoOperacao, p->pontuacao, p->tempoPartida);
+
+    fprintf(ocultar, "ranking.txt");
     
     fclose(arquivo);
     fclose(ocultar);
@@ -645,7 +641,7 @@ ListaPartidas* carregarRanking(){
 
     FILE *arquivo = fopen("ranking.txt", "r");
     
-    char nome[50];
+    char nome[30];
     int nivel=0;
     int operacao=0;
     int pontuacao=0;
@@ -789,7 +785,7 @@ void imprimirRanking(ListaPartidas* partidas){
 
         while(posicao<=MAX_RANK){
 
-            imprimirPosicaoVazia(posicao);
+            imprimirRankingVazio(posicao);
             ++posicao;
         }
 
@@ -810,7 +806,7 @@ void imprimirRanking(ListaPartidas* partidas){
 
         while(posicao<=MAX_RANK){
 
-            imprimirPosicaoVazia(posicao);
+            imprimirRankingVazio(posicao);
             ++posicao;
         }
 
@@ -831,7 +827,7 @@ void imprimirRanking(ListaPartidas* partidas){
 
         while(posicao<=MAX_RANK){
 
-            imprimirPosicaoVazia(posicao);
+            imprimirRankingVazio(posicao);
             ++posicao;
         }
 
@@ -852,7 +848,7 @@ void imprimirRanking(ListaPartidas* partidas){
 
         while(posicao<=MAX_RANK){
 
-            imprimirPosicaoVazia(posicao);
+            imprimirRankingVazio(posicao);
             ++posicao;
         }
 
@@ -873,7 +869,7 @@ void imprimirRanking(ListaPartidas* partidas){
 
         while(posicao<=MAX_RANK){
 
-            imprimirPosicaoVazia(posicao);
+            imprimirRankingVazio(posicao);
             ++posicao;
         }
 
@@ -964,7 +960,6 @@ int contaNos(ListaPartidas* partidas){
 void imprimirPosicaoRanking(Partida* partida, int posicao){
 
     printf("   #%d  Nome: %s\n", posicao, partida->nome);
-    printf("       Nivel: %d\n", partida->nivel);
     printf("       Operacao: %s\n", imprimirTipoOperacaoString(partida->tipoOperacao));
     printf("       Pontuacao: %d\n", partida->pontuacao);
     printf("       Tempo: "); imprimirTempo(partida->tempoPartida);
@@ -1034,17 +1029,6 @@ void rankingVazio(int tipoOperacao){
 void imprimirRankingVazio(int posicao){
 
     printf("   #%d  Nome:\n", posicao);
-    printf("       Nivel:\n");
-    printf("       Operacao:\n");
-    printf("       Pontuacao:\n");
-    printf("       Tempo: ");
-    printf("\n\n");
-}
-
-void imprimirPosicaoVazia(int posicao){
-
-    printf("   #%d  Nome:\n", posicao);
-    printf("       Nivel:\n");
     printf("       Operacao:\n");
     printf("       Pontuacao:\n");
     printf("       Tempo: ");

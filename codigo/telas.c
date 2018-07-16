@@ -44,7 +44,7 @@ void telaIniciarJogo(){
     printf("                            ####,         ,##########,\n");
     printf("       4pr353n+4:            ######,       #####,,,\n");
     printf("                              ,#######      ####\n");
-    printf("    C É L 3 R 3 8 R 0            ,#####,     ####\n");
+    printf("       CÉL3R3_8R0                ,#####,     ####\n");
     printf("                                     #####,,,,####\n");
     printf("                                     ,##########,\n");
     printf("                                       ,######,\n\n\n\n");
@@ -446,8 +446,7 @@ void telaSair(){
     printf("                   `-----------------------`\n");
     printf("                    '----------------------'\n\n\n");
 
-    printf("                         ATÉ A PRÓXIMA!\n");
-    printf("                         ^^^ ^ ^^^^^^^^\n\n");
+    printf("                         ATÉ A PRÓXIMA!\n\n");
 
     sleep(2);
 

@@ -6,29 +6,29 @@
 #include "conversao.h"
 #include "partida.h"
 
-#define ADICAO_MUITO_FACIL 10
-#define ADICAO_FACIL 50
-#define ADICAO_MEDIO 100
+#define ADICAO_MUITO_FACIL 50
+#define ADICAO_FACIL 100
+#define ADICAO_MEDIO 500
 #define ADICAO_DIFICIL 1000
-#define ADICAO_MUITO_DIFICIL 2500
+#define ADICAO_MUITO_DIFICIL 2000
 
-#define SUBTRACAO_MUITO_FACIL 10
-#define SUBTRACAO_FACIL 50
-#define SUBTRACAO_MEDIO 100
+#define SUBTRACAO_MUITO_FACIL 50
+#define SUBTRACAO_FACIL 100
+#define SUBTRACAO_MEDIO 500
 #define SUBTRACAO_DIFICIL 1000
-#define SUBTRACAO_MUITO_DIFICIL 2500
+#define SUBTRACAO_MUITO_DIFICIL 2000
 
-#define MULTIPLICACAO_MUITO_FACIL 5
-#define MULTIPLICACAO_FACIL 10
-#define MULTIPLICACAO_MEDIO 20
-#define MULTIPLICACAO_DIFICIL 100
+#define MULTIPLICACAO_MUITO_FACIL 10
+#define MULTIPLICACAO_FACIL 20
+#define MULTIPLICACAO_MEDIO 100
+#define MULTIPLICACAO_DIFICIL 500
 #define MULTIPLICACAO_MUITO_DIFICIL 1000
 
-#define DIVISAO_MUITO_FACIL 10
-#define DIVISAO_FACIL 50
-#define DIVISAO_MEDIO 100
-#define DIVISAO_DIFICIL 500
-#define DIVISAO_MUITO_DIFICIL 1000
+#define DIVISAO_MUITO_FACIL 100
+#define DIVISAO_FACIL 500
+#define DIVISAO_MEDIO 1000
+#define DIVISAO_DIFICIL 3000
+#define DIVISAO_MUITO_DIFICIL 5000
 
 enum opNum {ADICAO=1, SUBTRACAO=2, MULTIPLICACAO=3, DIVISAO=4, ALEATORIA=5};
 enum nivelOp {MUITO_FACIL=1, FACIL=2, MEDIO=3, DIFICIL=4, MUITO_DIFICIL=5};
@@ -125,8 +125,8 @@ void imprimirErros(ListaErros* erros){
 
     while(aux!=NULL){
 
-        printf("   [??] %d %c %d = %d\n", aux->erro->num1, imprimirTipoOperacaoChar(aux->erro->op), aux->erro->num2, aux->erro->resposta);
-        printf("   [!!] %d %c %d = %d\n\n", aux->erro->num1, imprimirTipoOperacaoChar(aux->erro->op), aux->erro->num2, aux->erro->resultado);
+        printf("   [X] %d %c %d = %d\n", aux->erro->num1, imprimirTipoOperacaoChar(aux->erro->op), aux->erro->num2, aux->erro->resposta);
+        printf("   [>] %d %c %d = %d\n\n", aux->erro->num1, imprimirTipoOperacaoChar(aux->erro->op), aux->erro->num2, aux->erro->resultado);
 
         aux = aux->prox;
     }
@@ -179,9 +179,9 @@ ListaOperacoes* carregarListaOperacoes(ListaOperacoes* operacoes, int flag, int 
 
         if(nivel==FACIL){
 
-            for(i=0; i<=ADICAO_FACIL; i++){
+            for(i=ADICAO_MUITO_FACIL; i<=ADICAO_FACIL; i++){
 
-                for(j=0; j<=ADICAO_FACIL; j++){
+                for(j=ADICAO_MUITO_FACIL; j<=ADICAO_FACIL; j++){
 
                     if(flag==1){
 
@@ -208,9 +208,9 @@ ListaOperacoes* carregarListaOperacoes(ListaOperacoes* operacoes, int flag, int 
 
         if(nivel==MEDIO){
 
-            for(i=0; i<=ADICAO_MEDIO; i++){
+            for(i=ADICAO_FACIL; i<=ADICAO_MEDIO; i++){
 
-                for(j=0; j<=ADICAO_MEDIO; j++){
+                for(j=i; j<=ADICAO_MEDIO; j++){
 
                     if(flag==1){
 
@@ -237,7 +237,7 @@ ListaOperacoes* carregarListaOperacoes(ListaOperacoes* operacoes, int flag, int 
 
         if(nivel==DIFICIL){
 
-            for(i=0; i<=ADICAO_DIFICIL; i++){
+            for(i=ADICAO_MEDIO; i<=ADICAO_DIFICIL; i++){
 
                 for(j=i; j<=ADICAO_DIFICIL; j++){
 
@@ -266,7 +266,7 @@ ListaOperacoes* carregarListaOperacoes(ListaOperacoes* operacoes, int flag, int 
 
         if(nivel==MUITO_DIFICIL){
 
-            for(i=0; i<=ADICAO_MUITO_DIFICIL; i++){
+            for(i=ADICAO_DIFICIL; i<=ADICAO_MUITO_DIFICIL; i++){
 
                 for(j=i; j<=ADICAO_MUITO_DIFICIL; j++){
 
@@ -324,9 +324,9 @@ ListaOperacoes* carregarListaOperacoes(ListaOperacoes* operacoes, int flag, int 
 
         if(nivel==FACIL){
 
-            for(i=0; i<=SUBTRACAO_FACIL; i++){
+            for(i=SUBTRACAO_MUITO_FACIL; i<=SUBTRACAO_FACIL; i++){
 
-                for(j=0; j<=SUBTRACAO_FACIL; j++){
+                for(j=SUBTRACAO_MUITO_FACIL; j<=SUBTRACAO_FACIL; j++){
 
                     if(flag==1){
 
@@ -353,9 +353,9 @@ ListaOperacoes* carregarListaOperacoes(ListaOperacoes* operacoes, int flag, int 
 
         if(nivel==MEDIO){
 
-            for(i=0; i<=SUBTRACAO_MEDIO; i++){
+            for(i=SUBTRACAO_MEDIO; i>=SUBTRACAO_FACIL; i--){
 
-                for(j=0; j<=SUBTRACAO_MEDIO; j++){
+                for(j=i; j>=SUBTRACAO_FACIL; j--){
 
                     if(flag==1){
 
@@ -382,9 +382,9 @@ ListaOperacoes* carregarListaOperacoes(ListaOperacoes* operacoes, int flag, int 
 
         if(nivel==DIFICIL){
 
-            for(i=0; i<=SUBTRACAO_DIFICIL; i++){
+            for(i=SUBTRACAO_DIFICIL; i>=SUBTRACAO_MEDIO; i--){
 
-                for(j=i; j<=SUBTRACAO_DIFICIL; j++){
+                for(j=i; j>=SUBTRACAO_MEDIO; j--){
 
                     if(flag==1){
 
@@ -411,9 +411,9 @@ ListaOperacoes* carregarListaOperacoes(ListaOperacoes* operacoes, int flag, int 
 
         if(nivel==MUITO_DIFICIL){
 
-            for(i=0; i<=SUBTRACAO_MUITO_DIFICIL; i++){
+            for(i=SUBTRACAO_MUITO_DIFICIL; i>=SUBTRACAO_DIFICIL; i--){
 
-                for(j=i; j<=SUBTRACAO_MUITO_DIFICIL; j++){
+                for(j=i; j>=SUBTRACAO_DIFICIL; j--){
 
                     if(flag==1){
 
@@ -500,7 +500,7 @@ ListaOperacoes* carregarListaOperacoes(ListaOperacoes* operacoes, int flag, int 
 
             for(i=0; i<=MULTIPLICACAO_MEDIO; i++){
 
-                for(j=0; j<=MULTIPLICACAO_MEDIO; j++){
+                for(j=i; j<=MULTIPLICACAO_MEDIO; j++){
 
                     if(flag==1){
 
@@ -529,7 +529,7 @@ ListaOperacoes* carregarListaOperacoes(ListaOperacoes* operacoes, int flag, int 
 
             for(i=0; i<=MULTIPLICACAO_DIFICIL; i++){
 
-                for(j=0; j<=MULTIPLICACAO_DIFICIL; j++){
+                for(j=i; j<=MULTIPLICACAO_DIFICIL; j++){
 
                     if(flag==1){
 
@@ -558,7 +558,7 @@ ListaOperacoes* carregarListaOperacoes(ListaOperacoes* operacoes, int flag, int 
 
             for(i=0; i<=MULTIPLICACAO_MUITO_DIFICIL; i++){
 
-                for(j=0; j<=MULTIPLICACAO_MUITO_DIFICIL; j++){
+                for(j=i; j<=MULTIPLICACAO_MUITO_DIFICIL; j++){
 
                     if(flag==1){
 
