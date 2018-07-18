@@ -14,7 +14,7 @@ Apesar dos meus testes, pode ser que existam outros bugs que deixei passar. Mas 
 
 Uma vez com o gcc instalado, é só abrir o terminal na pasta "codigo", onde se encontra o arquivo "Makefile", e digitar o comando "make". Assim, todos os módulos serão carregados. Para rodar o executável gerado, basta digitar o comando "./main.x".
 
-A tela de apresentação, bem como as outras "ilustrações" do jogo, foram todas geradas por um programa cujo algoritmo converte pixels em caracteres da tabela ASCII, bem divertido por sinal.
+A tela de apresentação, bem como as outras "ilustrações" do jogo, foram todas geradas por um programa cujo algoritmo converte pixels de imagens em caracteres da tabela ASCII.
 
 Após teclar ENTER, será exibido o menu principal, onde existem as opções de começar uma nova partida, verificar ranking, ler sobre neuróbica ou sair.
 
