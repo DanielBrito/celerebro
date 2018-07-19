@@ -20,7 +20,7 @@ Após teclar ENTER, será exibido o menu principal, onde existem as opções de 
 
 A opção principal é a "1 - Nova partida", pois ela leva a uma série de configurações que serão aplicadas nas operações a serem resolvidas, como tipo (adicão, subtração etc.), nível (fácil, médio, difícil etc.), bem como a quantidade de operações a serem respondidas. 
 
-Após o início da partida, as operações aparecem na tela e um cronômetro (em background) contabiliza o tempo. Ao final, é exibido o resultado juntamente com uma lista de opções sobre o que fazer a seguir. Jogar novamente? Voltar ao menu? Exibir os erros? (Se houverem)? Exibir ranking? Se a opção escolhida for "Sair", é exibida uma tela de despedida com um incentivo para retornar uma próxima vez.
+Após o início da partida, as operações aparecem na tela e um cronômetro (em background) contabiliza o tempo. Ao final, é exibido o resultado juntamente com uma lista de opções sobre o que fazer a seguir. Jogar novamente? Voltar ao menu? Exibir os erros? (Se houverem). Exibir ranking? Se a opção escolhida for "Sair", é exibida uma tela de despedida com um incentivo para retornar uma próxima vez.
 
 # Modificações
 
