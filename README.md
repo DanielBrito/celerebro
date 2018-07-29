@@ -22,7 +22,7 @@ Para criar um comando para executar o jogo direto no terminal:
 
 ```
 #!/bin/bash
-cd <endereço onde se encontra o ./main.x>`
+cd <endereço onde se encontra o ./main.x>
 ./main.x
 ```
 
