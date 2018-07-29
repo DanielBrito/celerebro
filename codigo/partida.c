@@ -857,7 +857,7 @@ void imprimirRanking(ListaPartidas* partidas){
 
     if(aux->partida->nivel==MUITO_DIFICIL){
 
-        printf("   ----------------------- MUITO DIFICIL -----------------------\n\n");
+        printf("   ----------------------- MUITO DIFÍCIL -----------------------\n\n");
 
         while(aux!=NULL && posicao<=MAX_RANK){
 
@@ -1016,7 +1016,7 @@ void rankingVazio(int tipoOperacao){
 
     if(tipoOperacao==MUITO_DIFICIL){
 
-        printf("   ----------------------- MUITO DIFICIL -----------------------\n\n");
+        printf("   ----------------------- MUITO DIFÍCIL -----------------------\n\n");
         
         while(posicao<=MAX_RANK){
 
@@ -1079,7 +1079,7 @@ void arquivoRankingNull(){
 
     posicao = 1;
     
-    printf("   ----------------------- MUITO DIFICIL -----------------------\n\n");
+    printf("   ----------------------- MUITO DIFÍCIL -----------------------\n\n");
     
     while(posicao<=MAX_RANK){
 
