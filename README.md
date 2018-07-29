@@ -12,13 +12,13 @@ Apesar dos meus testes, pode ser que existam outros bugs que deixei passar. Mas 
 
 # Executando
 
-Uma vez com o gcc instalado, é só abrir o terminal na pasta "codigo", onde se encontra o arquivo "Makefile", e digitar o comando "make". Assim, todos os módulos serão carregados. Para rodar o executável gerado, basta digitar o comando "./main.x".
+Uma vez com o gcc instalado, é só abrir o terminal na pasta ***codigo***, onde se encontra o arquivo ***Makefile***, e digitar o comando `make`. Assim, todos os módulos serão carregados. Para rodar o executável gerado, basta digitar o comando `./main.x`.
 
 Além disso...
 
 Para criar um comando para executar o jogo direto no terminal:
 
-1 - Criar um script com nome "celerebro" na pasta "codigo" com as seguintes linhas de comando:
+1 - Criar um script com nome ***celerebro*** na pasta ***codigo*** com as seguintes linhas de comando:
 
 ```
 #!/bin/bash
@@ -26,7 +26,7 @@ cd <endereço onde se encontra o ./main.x>`
 ./main.x
 ```
 
-2 - Copiar script criado para a pasta /usr/bin/:
+2 - Copiar script criado para a pasta ***/usr/bin/***:
 
 ```
 sudo cp celerebro /usr/bin/
