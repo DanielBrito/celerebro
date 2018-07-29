@@ -26,7 +26,7 @@ cd <endereço onde se encontra o ./main.x>`
 ./main.x
 ```
 
-2 - Copiar script criado para a pasta ***/usr/bin/***:
+2 - Copiar script criado para a devida pasta:
 
 ```
 sudo cp celerebro /usr/bin/
