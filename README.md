@@ -20,13 +20,16 @@ Para criar um comando para executar o jogo direto no terminal:
 
 1 - Criar um script com nome "celerebro" na pasta "codigo" com as seguintes linhas de comando:
 
-`#!/bin/bash`
-`cd <endereço onde se encontra o ./main.x>`
-`./main.x`
+```#!/bin/bash
+cd <endereço onde se encontra o ./main.x>`
+./main.x
+```
 
 2 - Copiar script criado para a pasta /usr/bin/:
 
-`sudo cp celerebro /usr/bin/`
+```
+sudo cp celerebro /usr/bin/
+```
 
 Pronto! Agora é só digitar o comando celerebro de qualquer diretório que o programa será executado.
 
