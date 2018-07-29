@@ -16,7 +16,7 @@ Uma vez com o gcc instalado, é só abrir o terminal na pasta ***codigo***, onde
 
 Além disso...
 
-Para criar um comando para executar o jogo direto no terminal:
+Para criar um comando para executar o jogo direto no terminal - de forma global:
 
 1 - Criar um script com nome ***celerebro*** na pasta ***codigo*** com as seguintes linhas de comando:
 
@@ -32,7 +32,7 @@ cd <endereço onde se encontra o ./main.x>
 sudo cp celerebro /usr/bin/
 ```
 
-Pronto! Agora é só digitar o comando celerebro de qualquer diretório que o programa será executado.
+Pronto! Agora é só digitar o comando `celerebro` de qualquer diretório que o programa será executado.
 
 # Jogando
 
