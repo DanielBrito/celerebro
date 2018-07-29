@@ -20,7 +20,7 @@ Para criar um comando para executar o jogo direto no terminal:
 
 1 - Criar um script com nome "celerebro" na pasta "codigo" com as seguintes linhas de comando:
 
-```\#!/bin/bash
+```##!/bin/bash
 cd <endereço onde se encontra o ./main.x>`
 ./main.x
 ```
