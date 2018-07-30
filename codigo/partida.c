@@ -344,7 +344,10 @@ void novaPartida(){
     p->pontuacao = pontuacao;
     p->tempoPartida = tempoPartida;
 
-    cadastrarRanking(p);
+    if(p->pontuacao>0){
+
+        cadastrarRanking(p);
+    }
 
     liberarListaOperacoes(operacoes);
 
@@ -960,8 +963,8 @@ int contaNos(ListaPartidas* partidas){
 void imprimirPosicaoRanking(Partida* partida, int posicao){
 
     printf("   #%d  Nome: %s\n", posicao, partida->nome);
-    printf("       Operacao: %s\n", imprimirTipoOperacaoString(partida->tipoOperacao));
-    printf("       Pontuacao: %d\n", partida->pontuacao);
+    printf("       Operação: %s\n", imprimirTipoOperacaoString(partida->tipoOperacao));
+    printf("       Pontuação: %d\n", partida->pontuacao);
     printf("       Tempo: "); imprimirTempo(partida->tempoPartida);
     printf("\n");
 }
@@ -1029,8 +1032,8 @@ void rankingVazio(int tipoOperacao){
 void imprimirRankingVazio(int posicao){
 
     printf("   #%d  Nome:\n", posicao);
-    printf("       Operacao:\n");
-    printf("       Pontuacao:\n");
+    printf("       Operação:\n");
+    printf("       Pontuação:\n");
     printf("       Tempo: ");
     printf("\n\n");
 }
