@@ -53,7 +53,7 @@ Após o início da partida, as operações aparecem na tela e um cronômetro (em
 
 # MODIFICAÇÕES
 
-Para modificar o intervalo dos números em cada nível é só alterar os valores dos #define's no arquivo ***operacao.c***. No entanto, para valores muitos altos, o consumo de memória para criar as listas tende a aumentar. Percebi isso analisando o processo no System Monitor.
+Para modificar o intervalo dos números em cada nível é só alterar os valores dos #define's no arquivo ***operacao.c***. No entanto, para valores muitos altos, o consumo de memória para criar as listas tende a aumentar. Analise o processo no System Monitor.
 
 # TELAS
 
