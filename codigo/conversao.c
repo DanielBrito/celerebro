@@ -82,7 +82,7 @@ void imprimirTempo(long int tempoPartida){
 	if(minutos>60){
 
 		horas = minutos/60;
-		minutos = 0;
+		minutos = minutos%60;
 	}
 
 	printf("%.2d:%.2d:%.2d\n", horas, minutos, segundos);
