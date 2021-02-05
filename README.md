@@ -28,15 +28,16 @@ Para criar um comando para executar o jogo direto no terminal, de forma global:
 
 ```
 #!/bin/bash
-cd <endereço onde se encontra o ./main.x> // Por exemplo: cd /home/danielbrito/games
+cd <endereço onde se encontra o ./main.x> // Por exemplo: cd /home/danielbrito/games/celerebro/codigo
 ./main.x
 ```
 
-2 - Copiar script criado para a devida pasta:
+2 - Copiar (ou mover) o script criado para a devida pasta:
 
 ```
 sudo cp celerebro /usr/bin/
 ```
+
 3 - Autorizar execução via linha de comando:
 
 ```
