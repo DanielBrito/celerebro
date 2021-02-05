@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-enum opNum {ADICAO=1, SUBTRACAO=2, MULTIPLICACAO=3, DIVISAO=4};
+enum opNum {ADICAO=1, SUBTRACAO=2, MULTIPLICACAO=3, DIVISAO=4, ALEATORIA=5};
 enum nivelOp {MUITO_FACIL=1, FACIL=2, MEDIO=3, DIFICIL=4, MUITO_DIFICIL=5};
 
 char* imprimirNivel(int nivel){
@@ -30,23 +30,23 @@ char* imprimirNivel(int nivel){
 
 char* imprimirTipoOperacaoString(int tipoOperacao){
 
-    if(tipoOperacao==1){
+    if(tipoOperacao==ADICAO){
 
        return "Adição [+]";
     }
-    if(tipoOperacao==2){
+    if(tipoOperacao==SUBTRACAO){
 
         return "Subtração [-]";
     }
-    if(tipoOperacao==3){
+    if(tipoOperacao==MULTIPLICACAO){
 
         return "Multiplicação [*]";
     }
-    if(tipoOperacao==4){
+    if(tipoOperacao==DIVISAO){
 
         return "Divisão [/]";
     }
-    if(tipoOperacao==5){
+    if(tipoOperacao==ALEATORIA){
 
         return "Aleatória [+-/*]";
     }
@@ -74,7 +74,7 @@ char imprimirTipoOperacaoChar(int tipoOperacao){
 
 void imprimirTempo(long int tempoPartida){
 
-    int horas=0, minutos=0, segundos=0;
+  int horas=0, minutos=0, segundos=0;
 
 	minutos = tempoPartida/60;
 	segundos = tempoPartida%60;
