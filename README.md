@@ -8,7 +8,7 @@
 
 **CÉLEREBRO** é um minigame que desenvolvi para praticar o conteúdo de programação que estava aprendendo, e também porque gosto muito de jogos “neuróbicos”.
 
-Tentei utilizar ao máximo diversos recursos que a poderosa linguagem C oferece, como manipulação de arquivos, estruturas de dados, dentre outros.
+Tentei utilizar ao máximo diversos recursos que a poderosa linguagem C oferece, como estruturas de dados, ponteiros, ordenação e manipulação de arquivos.
 
 Com quase todo o sistema modelado, não gostei dos resultados da função geradora de números aleatórios. Assim, tive que começar praticamento do zero, utilizando outro método para tornar cada operação o mais esporádica possível. Para isso, fiz o uso de listas encadeadas e conceitos de produto cartesiano.
 
