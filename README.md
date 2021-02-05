@@ -1,20 +1,24 @@
-# SOBRE O JOGO
+# :brain: Sobre o Jogo
 
-CÉLEREBRO é um minigame que estou desenvolvendo para praticar o conteúdo de programação que aprendo, e também porque gosto muito de jogos “neuróbicos”.
+<div align="center">
+<img src="celerebro.png" alt="Célerebro arte">
+</div>
 
-Este é apenas um protótipo de um projeto maior, que contará com diversos outros módulos, interface gráfica e tudo mais. No entanto, para que tal jogo possa sair inteiramente do papel, preciso estudar muitas outras ferramentas que me auxiliem neste processo criativo.
+<br/>
 
-Neste caso, tentei utilizar ao máximo os recursos que a poderosa linguagem C oferece, desde a manipulação de arquivos até estruturas de dados e ordenação. 
+**CÉLEREBRO** é um minigame que desenvolvi para praticar o conteúdo de programação que estava aprendendo, e também porque gosto muito de jogos “neuróbicos”.
 
-Muitas vezes, debugá-lo foi um desafio, pois não é fácil indentificar um erro de semântica. Mas, graças ao gdb, corrigi vários problemas de segmentation fault.
+Tentei utilizar ao máximo diversos recursos que a poderosa linguagem C oferece, como manipulação de arquivos, estruturas de dados, dentre outros.
 
 Com quase todo o sistema modelado, não gostei dos resultados da função geradora de números aleatórios. Assim, tive que começar praticamento do zero, utilizando outro método para tornar cada operação o mais esporádica possível. Para isso, fiz o uso de listas encadeadas e conceitos de produto cartesiano.
 
-Apesar dos meus testes, pode ser que existam outros bugs que deixei passar. Mas estes eu vou corrigindo no decorrer dos meus treinos diários...
+Muitas vezes, debugá-lo foi um desafio, pois não é fácil indentificar um erro de semântica. Mas, graças ao *gdb*, corrigi vários problemas de *segmentation fault*. Apesar dos meus testes, infelizmente, pode ser que existam outros *bugs* que deixei passar.
 
-# EXECUTANDO
+---
 
-Uma vez com o gcc instalado, é só abrir o terminal na pasta ***codigo***, onde se encontra o arquivo ***Makefile***, e digitar o comando `make`. Assim, todos os módulos serão carregados. Para rodar o executável gerado, basta digitar o comando `./main.x`.
+## :arrow_forward: Executando
+
+Uma vez com o *gcc* instalado, é só abrir o terminal na pasta ***codigo***, onde se encontra o arquivo ***Makefile***, e digitar o comando `make`. Assim, todos os módulos serão carregados. Para rodar o executável gerado, basta digitar o comando `./main.x`.
 
 Quem quiser ir além...
 
@@ -41,58 +45,95 @@ sudo chmod +x /usr/bin/celerebro
 
 Pronto! Agora é só digitar o comando `celerebro` de qualquer diretório que o programa será executado.
 
-# JOGANDO
+---
+
+## :video_game: Jogando
 
 A tela de apresentação, bem como as outras "ilustrações" do jogo, foram todas geradas por um programa cujo algoritmo converte pixels em caracteres da tabela ASCII.
 
-Após teclar ENTER, será exibido o Menu Principal, onde existem as opções de começar uma nova partida, verificar ranking, ler sobre neuróbica ou sair.
+Após teclar ENTER, será exibido o menu principal, onde existem as opções de começar uma nova partida, verificar ranking, ler sobre neuróbica ou sair.
 
 A opção principal é a "1 - Nova partida", pois ela leva a uma série de configurações que serão aplicadas nas operações a serem resolvidas, como tipo (adicão, subtração etc.), nível (fácil, médio, difícil etc.), bem como a quantidade de operações a serem respondidas. 
 
-Após o início da partida, as operações aparecem na tela e um cronômetro (em background) contabiliza o tempo. Ao final, é exibido o resultado juntamente com uma lista de opções sobre o que fazer a seguir. Jogar novamente? Voltar ao menu? Exibir os erros? (Se houverem) Exibir ranking? Se a opção escolhida for "Sair", é exibida uma tela de despedida com um incentivo para retornar uma próxima vez.
+Após o início da partida, as operações aparecem na tela e um cronômetro (em background) contabiliza o tempo. 
 
-# MODIFICAÇÕES
+Ao final, é exibido o resultado juntamente com uma lista de opções sobre o que fazer a seguir. Jogar novamente? Voltar ao menu? Exibir os erros? (Se houverem) Exibir ranking? 
 
-Para modificar o intervalo dos números em cada nível é só alterar os valores dos #define's no arquivo ***operacao.c***. No entanto, para valores muitos altos, o consumo de memória para criar as listas tende a aumentar. Analise o processo no System Monitor.
+Se a opção escolhida for "Sair", é exibida uma tela de despedida com um incentivo para retornar uma próxima vez.
 
-# TELAS
+---
+
+## :gear: Modificações
+
+Para modificar o intervalo dos números em cada nível é só alterar os valores dos `#define` no arquivo ***operacao.c***. No entanto, para valores muitos altos, o consumo de memória para criar as listas tende a aumentar. Analise o processo no *System Monitor*.
+
+---
+
+## :tv: Screencast
+
+Configura o screencast [neste vídeo](https://www.youtube.com/watch?v=HTMflPqPcOY) que gravei para o meu canal.
+
+---
+
+## :desktop_computer: Telas
 
 ### Abertura
 
-![](https://github.com/DanielBrito/celerebro/blob/master/prints/0%20-%20abertura.png)
+<div align="center">
+<img src="https://github.com/DanielBrito/celerebro/blob/master/prints/0%20-%20abertura.png?raw=true" alt="Tela Célerebro"/>
+</div>
 
 ### Menu
 
-![](https://github.com/DanielBrito/celerebro/blob/master/prints/1%20-%20menu.png)
+<div align="center">
+<img src="https://github.com/DanielBrito/celerebro/blob/master/prints/1%20-%20menu.png?raw=true" alt="Tela Célerebro"/>
+</div>
 
 ### Nova Partida - Operação
 
-![](https://github.com/DanielBrito/celerebro/blob/master/prints/2%20-%20novaPartida_operacao.png)
+<div align="center">
+<img src="https://github.com/DanielBrito/celerebro/blob/master/prints/2%20-%20novaPartida_operacao.png?raw=true" alt="Tela Célerebro"/>
+</div>
 
 ### Nova Partida - Nível
 
-![](https://github.com/DanielBrito/celerebro/blob/master/prints/3%20-%20novaPartida_nivel.png)
+<div align="center">
+<img src="https://github.com/DanielBrito/celerebro/blob/master/prints/3%20-%20novaPartida_nivel.png?raw=true" alt="Tela Célerebro"/>
+</div>
 
 ### Contagem
 
-![](https://github.com/DanielBrito/celerebro/blob/master/prints/4%20-%20contagem.png)
+<div align="center">
+<img src="https://github.com/DanielBrito/celerebro/blob/master/prints/4%20-%20contagem.png?raw=true" alt="Tela Célerebro"/>
+</div>
 
 ### Partida
 
-![](https://github.com/DanielBrito/celerebro/blob/master/prints/5%20-%20partida.png)
+<div align="center">
+<img src="https://github.com/DanielBrito/celerebro/blob/master/prints/5%20-%20partida.png?raw=true" alt="Tela Célerebro"/>
+</div>
 
 ### Resultado
 
-![](https://github.com/DanielBrito/celerebro/blob/master/prints/6%20-%20resultado.png)
+<div align="center">
+<img src="https://github.com/DanielBrito/celerebro/blob/master/prints/6%20-%20resultado.png?raw=true" alt="Tela Célerebro"/>
+</div>
 
 ### Erros
 
-![](https://github.com/DanielBrito/celerebro/blob/master/prints/7%20-%20erros.png)
+<div align="center">
+<img src="https://github.com/DanielBrito/celerebro/blob/master/prints/7%20-%20erros.png?raw=true" alt="Tela Célerebro"/>
+</div>
 
 ### Neuróbica
 
-![](https://github.com/DanielBrito/celerebro/blob/master/prints/8%20-%20neurobica.png)
+<div align="center">
+<img src="https://github.com/DanielBrito/celerebro/blob/master/prints/8%20-%20neurobica.png?raw=true" alt="Tela Célerebro"/>
+</div>
 
 ### Ranking
 
-![](https://github.com/DanielBrito/celerebro/blob/master/prints/9%20-%20ranking.png)
+<div align="center">
+<img src="https://github.com/DanielBrito/celerebro/blob/master/prints/9%20-%20ranking.png?raw=true" alt="Tela Célerebro"/>
+</div>
+
