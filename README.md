@@ -28,7 +28,15 @@ Para criar um comando para executar o jogo direto no terminal, de forma global:
 
 ```
 #!/bin/bash
-cd <endereço onde se encontra o ./main.x> // Por exemplo: cd /home/danielbrito/games/celerebro/codigo
+cd <endereço onde se encontra o ./main.x>
+./main.x
+```
+
+Por exemplo:
+
+```
+#!/bin/bash
+cd /home/danielbrito/games/celerebro/codigo
 ./main.x
 ```
 
