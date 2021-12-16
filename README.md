@@ -96,7 +96,7 @@ Configura o screencast [neste vídeo](https://www.youtube.com/watch?v=HTMflPqPcO
   <img src="https://github.com/DanielBrito/celerebro/blob/master/prints/0%20-%20abertura.png?raw=true" alt="Tela Célerebro"/>
 </div>
 
-//
+<br>
 
 <h3 align="center">Menu</h3>
 
@@ -104,7 +104,7 @@ Configura o screencast [neste vídeo](https://www.youtube.com/watch?v=HTMflPqPcO
   <img src="https://github.com/DanielBrito/celerebro/blob/master/prints/1%20-%20menu.png?raw=true" alt="Tela Célerebro"/>
 </div>
 
-//
+<br>
 
 <h3 align="center">Nova Partida - Operação</h3>
 
@@ -112,7 +112,7 @@ Configura o screencast [neste vídeo](https://www.youtube.com/watch?v=HTMflPqPcO
   <img src="https://github.com/DanielBrito/celerebro/blob/master/prints/2%20-%20novaPartida_operacao.png?raw=true" alt="Tela Célerebro"/>
 </div>
 
-//
+<br>
 
 <h3 align="center">Nova Partida - Nível</h3>
 
@@ -120,7 +120,7 @@ Configura o screencast [neste vídeo](https://www.youtube.com/watch?v=HTMflPqPcO
   <img src="https://github.com/DanielBrito/celerebro/blob/master/prints/3%20-%20novaPartida_nivel.png?raw=true" alt="Tela Célerebro"/>
 </div>
 
-//
+<br>
 
 <h3 align="center">Contagem</h3>
 
@@ -128,7 +128,7 @@ Configura o screencast [neste vídeo](https://www.youtube.com/watch?v=HTMflPqPcO
   <img src="https://github.com/DanielBrito/celerebro/blob/master/prints/4%20-%20contagem.png?raw=true" alt="Tela Célerebro"/>
 </div>
 
-//
+<br>
 
 <h3 align="center">Partida</h3>
 
@@ -136,7 +136,7 @@ Configura o screencast [neste vídeo](https://www.youtube.com/watch?v=HTMflPqPcO
   <img src="https://github.com/DanielBrito/celerebro/blob/master/prints/5%20-%20partida.png?raw=true" alt="Tela Célerebro"/>
 </div>
 
-//
+<br>
 
 <h3 align="center">Resultado</h3>
 
@@ -144,7 +144,7 @@ Configura o screencast [neste vídeo](https://www.youtube.com/watch?v=HTMflPqPcO
   <img src="https://github.com/DanielBrito/celerebro/blob/master/prints/6%20-%20resultado.png?raw=true" alt="Tela Célerebro"/>
 </div>
 
-//
+<br>
 
 <h3 align="center">Erros</h3>
 
@@ -152,7 +152,7 @@ Configura o screencast [neste vídeo](https://www.youtube.com/watch?v=HTMflPqPcO
   <img src="https://github.com/DanielBrito/celerebro/blob/master/prints/7%20-%20erros.png?raw=true" alt="Tela Célerebro"/>
 </div>
 
-//
+<br>
 
 <h3 align="center">Neuróbica</h3>
 
@@ -160,7 +160,7 @@ Configura o screencast [neste vídeo](https://www.youtube.com/watch?v=HTMflPqPcO
   <img src="https://github.com/DanielBrito/celerebro/blob/master/prints/8%20-%20neurobica.png?raw=true" alt="Tela Célerebro"/>
 </div>
 
-//
+<br>
 
 <h3 align="center">Ranking</h3>
 
