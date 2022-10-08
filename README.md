@@ -82,7 +82,7 @@ Para modificar o intervalo dos números em cada nível é só alterar os valores
 
 ## :tv: Screencast
 
-Configura o screencast [neste vídeo](https://www.youtube.com/watch?v=HTMflPqPcOY) que gravei para o meu canal.
+Confira o screencast [neste vídeo](https://www.youtube.com/watch?v=HTMflPqPcOY) que gravei para o meu canal.
 
 ![Video cover](./cover.jpg)
 
